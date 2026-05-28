@@ -35,7 +35,7 @@ export default function TermsAndConditions({ navigate }) {
               <h2 className="font-display font-bold text-xl sm:text-2xl">1. Eligibility Criteria & Verification</h2>
             </div>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-8">
-              All applications for B.Tech (undergraduate), MBA, and MCA (postgraduate) must meet the minimum academic standards established by the JNTU Anantapur and Andhra Pradesh State Council of Higher Education (APSCHE). Candidates must submit genuine transcripts. Submission of falsified documentation will result in immediate cancellation of candidature with no refund of fees.
+              All applications for B.Tech (undergraduate), MBA, and MCA (postgraduate) must meet the minimum academic standards established by Annamacharya University. Candidates must submit genuine transcripts. Submission of falsified documentation will result in immediate cancellation of candidature with no refund of fees.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function TermsAndConditions({ navigate }) {
               </p>
               <ul className="list-disc pl-5 flex flex-col gap-2 text-slate-500">
                 <li>Admissions registration fees are strictly non-refundable.</li>
-                <li>Refund requests for tuition deposits will be processed in accordance with the standard AICTE/UGC institutional directives.</li>
+                <li>Refund requests for tuition deposits will be processed in accordance with the standard UGC institutional directives.</li>
                 <li>Hostel, dining hall, and transportation fees once paid are non-refundable upon commencement of the academic term.</li>
               </ul>
             </div>
@@ -64,7 +64,7 @@ export default function TermsAndConditions({ navigate }) {
               <h2 className="font-display font-bold text-xl sm:text-2xl">3. Campus Discipline & Ragging Policies</h2>
             </div>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-8">
-              Annamacharya Institute enforces a strictly zero-tolerance policy against any form of ragging or harassment on or off-campus. Violations of disciplinary frameworks will result in severe penalizing measures, including immediate suspension or rustication, and filing of official police reports under Andhra Pradesh anti-ragging penal provisions.
+              Annamacharya University enforces a strictly zero-tolerance policy against any form of ragging or harassment on or off-campus. Violations of disciplinary frameworks will result in severe penalizing measures, including immediate suspension or rustication, and filing of official police reports under Andhra Pradesh anti-ragging penal provisions.
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function TermsAndConditions({ navigate }) {
               <h2 className="font-display font-bold text-xl sm:text-2xl">4. Communications Authorization</h2>
             </div>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed pl-8">
-              By checking the consent box during registration, you explicitly authorize the admissions committee and institutional partners of Annamacharya Institute of Technology & Sciences, Tirupati to contact you via Email, SMS, WhatsApp, RCS, or telephonic voice calls regarding admission reminders, newsletters, fee deadlines, or marketing materials.
+              By checking the consent box during registration, you explicitly authorize the admissions committee and institutional partners of Annamacharya University to contact you via Email, SMS, WhatsApp, RCS, or telephonic voice calls regarding admission reminders, newsletters, fee deadlines, or marketing materials.
             </p>
           </div>
 

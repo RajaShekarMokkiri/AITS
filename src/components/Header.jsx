@@ -22,9 +22,9 @@ export default function Header({ currentRoute, navigate }) {
       {/* Red Announcement / Top Bar */}
       <div className="w-full bg-brand-red text-white text-xs sm:text-sm py-2 px-4 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-2 border-b border-brand-red-dark">
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-          <a href="mailto:admissions@aits-tpt.edu.in" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
+          <a href="mailto:info@annamacharyauniversity.edu.in" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
             <Mail size={14} className="text-white" />
-            <span>admissions@aits-tpt.edu.in</span>
+            <span>info@annamacharyauniversity.edu.in</span>
           </a>
           <a href="tel:+919281416210" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
             <Phone size={14} className="text-white" />
@@ -56,13 +56,13 @@ export default function Header({ currentRoute, navigate }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4.5 flex justify-between items-center">
         {/* Crest Logo Shield and Text */}
         <div className="flex items-center gap-4 cursor-pointer shrink-0" onClick={() => navigate('home')}>
-          {/* Official Logo Crest for AITS */}
-          <img src="/logo.png" className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" alt="AITS Logo" />
+          {/* Official Logo Crest for Annamacharya University */}
+          <img src="/logo.png" className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" alt="Annamacharya University Logo" />
           
-          <div className="flex flex-col gap-1.5">
-            <span className="font-display text-lg sm:text-2xl font-black text-brand-red tracking-tight leading-none">Annamacharya</span>
-            <span className="text-[8px] sm:text-[9.5px] font-sans font-bold text-brand-navy tracking-widest leading-none uppercase">Institute of Technology & Sciences</span>
-            <span className="text-[7.5px] sm:text-[8.5px] font-sans font-extrabold text-brand-gold tracking-widest leading-none uppercase">Tirupati · Autonomous</span>
+          <div className="flex flex-col gap-1">
+            <span className="font-display text-lg sm:text-2xl font-black text-brand-navy tracking-tight leading-none">Annamacharya University</span>
+            <span className="text-[9px] sm:text-[10.5px] font-sans font-bold text-brand-red tracking-widest leading-none uppercase">Empowering Minds, Shaping Futures</span>
+            <span className="text-[8px] sm:text-[9.5px] font-sans font-extrabold text-brand-gold tracking-widest leading-none uppercase">Vidwan Sarvatra Pujyathe</span>
           </div>
         </div>
 

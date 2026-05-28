@@ -41,10 +41,6 @@ export default function Home({ navigate }) {
             <span className="text-brand-gold">Computer Science</span>
           </h1>
 
-          <h2 className="font-display font-bold text-lg sm:text-2xl text-slate-200 uppercase tracking-widest mb-6">
-            AEDP – Apprenticeship Embedded Degree Program
-          </h2>
-
           <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mb-10">
             Four-Year Multidisciplinary UG Course | 2 Years Institution + 2 Years Industry. Powered by TalentSprint (Part of Accenture). Gain practical skills on advanced frameworks while earning a degree.
           </p>
@@ -108,24 +104,23 @@ export default function Home({ navigate }) {
           </div>
 
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-brand-navy tracking-tight leading-tight">
-            Annamacharya Institute of <br className="hidden sm:inline" />
-            Technology & Sciences, Tirupati
+            Annamacharya University
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Annamacharya Institute of Technology & Sciences, Tirupati (AITS-TPT) was established in the year 2007 by the Annamacharya Educational Trust. Located in a scenic atmosphere near Venkatapuram on Karakambadi Road, the institute is an Autonomous college affiliated to JNTUA, Anantapur, approved by AICTE, and accredited with <strong>NAAC 'A' Grade</strong>.
+            Annamacharya University (formerly AITS) stands as a premier seat of higher learning, established to deliver high-quality, futuristic academic experiences. Our institution commits to absolute excellence in education, pioneering research, and technological innovation.
           </p>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            We are dedicated to providing state-of-the-art engineering instruction, advanced digital classrooms, state-of-the-art specialized R&D research laboratories, and global placements opportunities. Our focus is to align academic syllabi with dynamic industry requirements to empower students to build future-ready careers.
+            We are dedicated to providing state-of-the-art engineering instruction, advanced digital classrooms, state-of-the-art specialized R&D research laboratories, and global placement opportunities. Our focus is to align academic syllabi with dynamic industry requirements to empower students to build future-ready careers.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
             {[
-              'UGC Autonomous Institution status',
-              'Accredited by NAAC with \'A\' Grade',
-              'NBA Accredited Academic Departments',
-              'Comprehensive Placement Coaching cells',
+              'State Private University Recognition',
+              'Advanced Industry-Aligned Curriculum',
+              'Pioneering Multidisciplinary Schools',
+              'Robust Placement & Internship Hub',
             ].map((item, idx) => (
               <div key={idx} className="flex items-center gap-2.5">
                 <CheckCircle2 size={18} className="text-brand-red shrink-0" />
@@ -141,15 +136,15 @@ export default function Home({ navigate }) {
           <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/5 rounded-full filter blur-xl"></div>
           <div className="absolute -bottom-12 -left-12 w-32 h-32 bg-brand-red/10 rounded-full filter blur-xl"></div>
 
-          {/* Official Logo Crest for AITS */}
-          <img src="/logo.png" className="w-24 h-24 mb-6 relative z-10 object-contain bg-white rounded-full p-1 border-2 border-brand-gold/40 shrink-0" alt="AITS Logo" />
+          {/* Official Logo Crest for Annamacharya University */}
+          <img src="/logo.png" className="w-24 h-24 mb-6 relative z-10 object-contain bg-white rounded-full p-1 border-2 border-brand-gold/40 shrink-0" alt="Annamacharya University Logo" />
 
-          <span className="font-display font-extrabold text-brand-gold text-sm tracking-widest uppercase mb-1">AITS TIRUPATI</span>
+          <span className="font-display font-extrabold text-brand-gold text-sm tracking-widest uppercase mb-1">ANNAMACHARYA UNIVERSITY</span>
           <h3 className="font-display font-black text-2xl sm:text-3xl text-white tracking-tight leading-tight mb-4">
-            Autonomous Education for Tomorrow
+            Empowering Minds, Shaping Futures
           </h3>
           <p className="text-slate-300 text-sm leading-relaxed mb-6">
-            Approved by AICTE, permanent affiliation to JNTUA, and officially recognized under 2(f) and 12(B) UGC act. Dedicated to academic brilliance.
+            Officially recognized state private university committed to absolute educational brilliance, premium research infrastructure, and stellar global placements.
           </p>
           <button 
             onClick={() => navigate('about')} 
@@ -245,7 +240,7 @@ export default function Home({ navigate }) {
                 stream: "B.Tech CSE (AEDP), 2025",
                 package: "12.5 LPA",
                 avatar: "AH",
-                quote: "The Apprenticeship Embedded Degree Program (AEDP) at AITS was a game changer. Spending 2 years inside corporate projects at Accenture gave me real-world development skills that standard classes couldn't match."
+                quote: "The Apprenticeship Embedded Degree Program (AEDP) at Annamacharya University was a game changer. Spending 2 years inside corporate projects at Accenture gave me real-world development skills that standard classes couldn't match."
               },
               {
                 name: "K. Mohan Krishna",
@@ -253,7 +248,7 @@ export default function Home({ navigate }) {
                 stream: "B.Tech ECE, 2024",
                 package: "8.5 LPA",
                 avatar: "KM",
-                quote: "The technical laboratories at Annamacharya Institute are top-tier. Instructors guided me closely on embedded system designs, and the Pre-Placement Cell trained me to crack the TCS interview on my very first try."
+                quote: "The technical laboratories at Annamacharya University are top-tier. Instructors guided me closely on embedded system designs, and the Pre-Placement Cell trained me to crack the TCS interview on my very first try."
               },
               {
                 name: "P. Sneha Latha",
@@ -261,7 +256,7 @@ export default function Home({ navigate }) {
                 stream: "MCA, 2024",
                 package: "9.2 LPA",
                 avatar: "PS",
-                quote: "The autonomous curriculum of AITS is constantly updated with new tech stacks. Focusing on advanced databases and cloud analytics allowed me to secure a placement before even completing my postgraduate studies."
+                quote: "The university curriculum of Annamacharya University is constantly updated with new tech stacks. Focusing on advanced databases and cloud analytics allowed me to secure a placement before even completing my postgraduate studies."
               }
             ].map((testi, idx) => (
               <div 

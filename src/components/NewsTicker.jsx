@@ -4,7 +4,7 @@ import { Megaphone } from 'lucide-react';
 export default function NewsTicker({ navigate }) {
   const newsItems = [
     "B.Tech Admissions open for Academic Year 2026-27. Secure your seats in technology divisions today!",
-    "Annamacharya Institute of Technology & Sciences, Tirupati accredited with JNTUA Autonomous status and NAAC 'A' Grade.",
+    "Annamacharya University officially recognized as a prestigious State Private University with premium research schools.",
     "Semester-end examinations results declared. Candidates can log in to the Student Portal to check credit marks.",
     "National Level Student Technical Symposium 'Ananta 2026' scheduled on June 12th & 13th. Registrations open."
   ];

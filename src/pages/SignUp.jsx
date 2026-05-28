@@ -64,11 +64,11 @@ export default function SignUp({ navigate }) {
         <div className="relative z-10 max-w-xl">
           {/* AITS Crest */}
           <div className="flex items-center gap-4 bg-white/10 backdrop-blur-md p-3 rounded-xl border border-white/20 w-fit">
-            {/* Official Logo Crest for AITS */}
-            <img src="/logo.png" className="w-12 h-12 object-contain bg-white rounded-full p-0.5 shrink-0" alt="AITS Logo" />
+            {/* Official Logo Crest for Annamacharya University */}
+            <img src="/logo.png" className="w-12 h-12 object-contain bg-white rounded-full p-0.5 shrink-0" alt="Annamacharya University Logo" />
             <div className="flex flex-col">
               <span className="font-display text-lg font-black text-white tracking-tight leading-none">Annamacharya</span>
-              <span className="text-[8px] font-bold text-slate-300 tracking-wider mt-1 uppercase">Tech & Sciences · Tirupati</span>
+              <span className="text-[9px] font-bold text-slate-300 tracking-wider mt-1 uppercase">University</span>
             </div>
           </div>
 
@@ -240,7 +240,7 @@ export default function SignUp({ navigate }) {
                 >
                   Privacy Policy
                 </button>
-                , and authorize Annamacharya Institute and its partners to contact me via Email, SMS, WhatsApp, RCS, or Voice Call.
+                , and authorize Annamacharya University and its partners to contact me via Email, SMS, WhatsApp, RCS, or Voice Call.
               </label>
             </div>
 

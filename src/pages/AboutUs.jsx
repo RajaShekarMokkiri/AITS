@@ -18,7 +18,7 @@ export default function AboutUs({ navigate }) {
           <span className="text-brand-gold text-xs sm:text-sm font-bold tracking-widest uppercase">Legacy of Excellence</span>
           <h1 className="font-display font-black text-3xl sm:text-5xl tracking-tight mt-3 mb-4">About Our Institute</h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Discover the legacy, governing vision, and accreditation benchmarks that define Annamacharya Institute of Technology & Sciences, Tirupati.
+            Discover the legacy, governing vision, and academic breakthroughs that define Annamacharya University.
           </p>
         </div>
       </div>
@@ -28,26 +28,26 @@ export default function AboutUs({ navigate }) {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2 text-brand-red">
             <Award size={18} className="stroke-[2.5]" />
-            <span className="font-sans font-bold text-xs sm:text-sm tracking-widest uppercase">AITS Tirupati History</span>
+            <span className="font-sans font-bold text-xs sm:text-sm tracking-widest uppercase">University Legacy</span>
           </div>
           <h2 className="font-display font-extrabold text-2xl sm:text-4xl text-brand-navy tracking-tight leading-tight">
-            Nurturing Technology Professionals Since 2007
+            Nurturing Professionals Since 1998
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Annamacharya Institute of Technology & Sciences, Tirupati (AITS-TPT) was established by the pioneering Annamacharya Educational Trust in 2007. The trust, named in honor of the legendary saint-composer Sri Tallapaka Annamacharya, is committed to establishing state-of-the-art educational hubs across Andhra Pradesh.
+            Annamacharya University (established by the pioneering Annamacharya Educational Trust) has been a leading light of higher education in Andhra Pradesh. Founded with a vision to deliver world-class learning experiences, the trust has built premium campuses that empower students with cutting-edge expertise and high moral standards.
           </p>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            The institution operates as a UGC Autonomous College affiliated to JNTUA, Anantapur, and holds official accreditation from the National Assessment and Accreditation Council (NAAC) with a distinguished <strong>'A' Grade</strong>. Our primary thrust is to produce professional graduates capable of thriving in highly competitive international spaces.
+            Following its transition to a prestigious State Private University, Annamacharya University structures its education across specialized Schools of Study, combining advanced technological fields, sciences, management, pharmacy, law, and agricultural programs.
           </p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-10 border border-slate-100 flex flex-col gap-8">
-          <h3 className="font-display font-bold text-xl text-brand-navy border-b border-slate-100 pb-4">Accreditation & Recognitions</h3>
+          <h3 className="font-display font-bold text-xl text-brand-navy border-b border-slate-100 pb-4">Recognitions & Standards</h3>
           <div className="flex flex-col gap-5">
             {[
-              { title: 'NAAC \'A\' Grade Accreditation', desc: 'Approved with a superior CGPA, validating academic rigor, modern infrastructure, and student support.' },
-              { title: 'UGC Autonomous Status', desc: 'Grants autonomy to custom-design highly optimized course curricula directly aligned with industry requisites.' },
-              { title: 'AICTE Approval', desc: 'Officially certified by the All India Council for Technical Education, New Delhi.' }
+              { title: 'State Private University Status', desc: 'Officially recognized by the Government of Andhra Pradesh to award undergraduate, postgraduate, and research degrees.' },
+              { title: 'Advanced Multidisciplinary Syllabi', desc: 'Fully modernized course curricula designed in cooperation with top industry giants like Accenture, TalentSprint, and TCS.' },
+              { title: 'Premium Research Hub', desc: 'Equipped with state-of-the-art specialized R&D laboratories, digital classrooms, and extensive library systems.' }
             ].map((acc, idx) => (
               <div key={idx} className="flex gap-4">
                 <ShieldCheck className="text-brand-gold shrink-0 mt-1" size={20} />

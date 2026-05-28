@@ -11,22 +11,22 @@ export default function Footer({ navigate }) {
         {/* Column 1: Branding & Address */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => navigate('home')}>
-            {/* Official Logo Crest for AITS */}
-            <img src="/logo.png" className="w-10 h-10 object-contain shrink-0" alt="AITS Logo" />
+            {/* Official Logo Crest for Annamacharya University */}
+            <img src="/logo.png" className="w-10 h-10 object-contain shrink-0" alt="Annamacharya University Logo" />
             <div className="flex flex-col">
               <span className="font-display text-lg font-black text-white tracking-tight leading-none">Annamacharya</span>
-              <span className="text-[8px] font-bold text-slate-300 tracking-wider mt-1 uppercase">Tech & Sciences · Tirupati</span>
+              <span className="text-[9px] font-bold text-slate-300 tracking-wider mt-1 uppercase">University</span>
             </div>
           </div>
           
           <p className="text-slate-300 text-sm leading-relaxed mt-2">
-            Providing high-quality educational experiences to empower students to build professional competence and a strong moral foundation since 1998.
+            Discover Annamacharya University's commitment to excellence in education, research, and innovation. Empowering minds and shaping futures today.
           </p>
           
           <div className="flex flex-col gap-3 text-slate-300 text-sm mt-3">
             <div className="flex items-start gap-2.5">
               <MapPin size={18} className="text-brand-gold shrink-0 mt-0.5" />
-              <span>Venkatapuram, Karakambadi Road, Renigunta, Tirupati, Andhra Pradesh - 517520</span>
+              <span>New Boyanapalli, Rajampet, Annamayya Dist., Andhra Pradesh - 516126</span>
             </div>
           </div>
         </div>
@@ -81,9 +81,9 @@ export default function Footer({ navigate }) {
           <div>
             <h3 className="font-display font-bold text-lg text-white mb-6 border-l-3 border-brand-gold pl-3">Inquiries</h3>
             <div className="flex flex-col gap-3.5 text-sm text-slate-300">
-              <a href="mailto:admissions@aits-tpt.edu.in" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
+              <a href="mailto:info@annamacharyauniversity.edu.in" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
                 <Mail size={16} className="text-brand-gold" />
-                <span>admissions@aits-tpt.edu.in</span>
+                <span>info@annamacharyauniversity.edu.in</span>
               </a>
               <a href="tel:+919281416210" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
                 <Phone size={16} className="text-brand-gold" />
@@ -121,12 +121,12 @@ export default function Footer({ navigate }) {
       {/* Copyright Divider */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 border-t border-slate-800 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs sm:text-sm text-slate-400">
         <div>
-          <span>© {currentYear} Annamacharya Institute of Technology and Sciences, Tirupati. All rights reserved.</span>
+          <span>© {currentYear} Annamacharya University. All rights reserved.</span>
         </div>
         <div className="flex items-center gap-6">
           <button onClick={() => navigate('terms')} className="hover:text-brand-gold transition duration-200 cursor-pointer">Terms</button>
           <button onClick={() => navigate('privacy')} className="hover:text-brand-gold transition duration-200 cursor-pointer">Privacy</button>
-          <span>Affiliated to JNTUA, Anantapuramu</span>
+          <span>Established by Govt. of Andhra Pradesh</span>
         </div>
       </div>
     </footer>

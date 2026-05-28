@@ -55,14 +55,14 @@ export default function Header({ currentRoute, navigate }) {
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4.5 flex justify-between items-center">
         {/* Crest Logo Shield and Text */}
-        <div className="flex items-center gap-4 cursor-pointer shrink-0" onClick={() => navigate('home')}>
+        <div className="flex items-center gap-2 sm:gap-4 cursor-pointer min-w-0 flex-1 mr-2 sm:mr-4 lg:mr-0" onClick={() => navigate('home')}>
           {/* Official Logo Crest for Annamacharya University */}
           <img src="/logo.png" className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" alt="Annamacharya University Logo" />
           
-          <div className="flex flex-col gap-0.5 justify-center">
-            <span className="font-display text-base sm:text-xl font-black text-brand-navy tracking-tight leading-tight uppercase">Annamacharya University</span>
-            <span className="text-[7.5px] sm:text-[9px] font-sans font-semibold text-brand-red tracking-wide leading-tight">Estd. under Andhra Pradesh Private Universities (Establishment and Regulation) Act, 2016</span>
-            <span className="text-[7px] sm:text-[8px] font-sans font-bold text-brand-gold tracking-wider leading-none uppercase">(University listed in UGC as per section 2(f) of the UGC Act, 1956)</span>
+          <div className="flex flex-col gap-0.5 justify-center min-w-0">
+            <span className="font-display text-base sm:text-xl font-black text-brand-navy tracking-tight leading-tight uppercase truncate sm:whitespace-normal">Annamacharya University</span>
+            <span className="text-[7.5px] sm:text-[9px] font-sans font-semibold text-brand-red tracking-wide leading-tight break-words">Estd. under Andhra Pradesh Private Universities (Establishment and Regulation) Act, 2016</span>
+            <span className="text-[7px] sm:text-[8px] font-sans font-bold text-brand-gold tracking-wider leading-none uppercase break-words">(University listed in UGC as per section 2(f) of the UGC Act, 1956)</span>
           </div>
         </div>
 

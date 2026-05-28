@@ -89,7 +89,7 @@ export default function Home({ navigate }) {
 
           <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none mb-4 min-h-[2.2em] sm:min-h-[2em]">
             BTech in <br className="hidden sm:inline" />
-            <span className="text-brand-gold relative inline-block whitespace-nowrap">
+            <span className="text-brand-gold relative inline-block whitespace-normal sm:whitespace-nowrap">
               {displayedText}
               <span className="inline-block w-1.5 h-[0.85em] bg-brand-gold ml-1.5 align-middle animate-pulse"></span>
             </span>

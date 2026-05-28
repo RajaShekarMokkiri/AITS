@@ -2,6 +2,43 @@ import React from 'react';
 import { Award, Users, Building, ShieldCheck, ArrowRight, CheckCircle2, ChevronRight, Zap, Target, Star } from 'lucide-react';
 
 export default function Home({ navigate }) {
+  // Typewriter effect state and logic
+  const words = ["Computer Science", "Electronics & Communication Engineering", "Electrical & Electronics Engineering", "Mechanical Engineering", "Civil Engineering"];
+  const [currentWordIdx, setCurrentWordIdx] = React.useState(0);
+  const [displayedText, setDisplayedText] = React.useState('');
+  const [isDeleting, setIsDeleting] = React.useState(false);
+  const [typingSpeed, setTypingSpeed] = React.useState(100);
+
+  React.useEffect(() => {
+    let timer;
+    const activeWord = words[currentWordIdx];
+    
+    if (isDeleting) {
+      timer = setTimeout(() => {
+        setDisplayedText(prev => prev.slice(0, -1));
+        setTypingSpeed(50); // fast deleting
+      }, typingSpeed);
+    } else {
+      timer = setTimeout(() => {
+        setDisplayedText(activeWord.slice(0, displayedText.length + 1));
+        setTypingSpeed(100); // stable typing speed
+      }, typingSpeed);
+    }
+
+    if (!isDeleting && displayedText === activeWord) {
+      // Pause when fully typed
+      timer = setTimeout(() => {
+        setIsDeleting(true);
+      }, 1500);
+    } else if (isDeleting && displayedText === '') {
+      setIsDeleting(false);
+      setCurrentWordIdx((prev) => (prev + 1) % words.length);
+      setTypingSpeed(200); // pause before starting next word
+    }
+
+    return () => clearTimeout(timer);
+  }, [displayedText, isDeleting, currentWordIdx]);
+
   const stats = [
     { label: 'Academic Legacy', value: '25+ Years', icon: <Award className="text-brand-gold" size={24} /> },
     { label: 'Successful Placements', value: '10,000+', icon: <Users className="text-brand-gold" size={24} /> },
@@ -31,14 +68,31 @@ export default function Home({ navigate }) {
 
         {/* Hero Content */}
         <div className="relative z-10 max-w-4xl text-white">
-          {/* Admissions Open Banner */}
-          <div className="bg-brand-gold text-brand-navy-dark px-4 py-1.5 rounded font-display font-extrabold text-xs uppercase tracking-widest w-fit mb-5 shadow-lg animate-pulse">
-            Admissions Open 2026-27
+          {/* Trust Badges & Accreditations */}
+          <div className="flex flex-wrap gap-2.5 mb-5 items-center">
+            <div className="bg-brand-gold text-brand-navy-dark px-4 py-1.5 rounded font-display font-extrabold text-xs uppercase tracking-widest w-fit shadow-lg animate-pulse shrink-0">
+              Admissions Open 2026-27
+            </div>
+            <div className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-1.5 rounded-lg font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm shrink-0">
+              <Award size={13} className="text-brand-gold" />
+              <span>NAAC A+ Grade</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-1.5 rounded-lg font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm shrink-0">
+              <ShieldCheck size={13} className="text-brand-gold" />
+              <span>NBA Tier-1</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-3 py-1.5 rounded-lg font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm shrink-0">
+              <CheckCircle2 size={13} className="text-brand-gold" />
+              <span>UGC Listed 2(f)</span>
+            </div>
           </div>
 
-          <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none mb-4">
+          <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none mb-4 min-h-[2.2em] sm:min-h-[2em]">
             BTech in <br className="hidden sm:inline" />
-            <span className="text-brand-gold">Computer Science</span>
+            <span className="text-brand-gold relative inline-block">
+              {displayedText}
+              <span className="inline-block w-1.5 h-[0.85em] bg-brand-gold ml-1.5 align-middle animate-pulse"></span>
+            </span>
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mb-10">
@@ -228,7 +282,7 @@ export default function Home({ navigate }) {
               What Our Students & Alumni Say
             </h2>
             <p className="text-slate-500 text-sm sm:text-base max-w-xl mx-auto leading-relaxed mt-3">
-              Hear directly from our graduates who successfully transitioned from AITS Tirupati's academic curriculum to industry leadership roles.
+              Hear directly from our graduates who successfully transitioned from Annamacharya University's academic curriculum to industry leadership roles.
             </p>
           </div>
 
@@ -302,7 +356,7 @@ export default function Home({ navigate }) {
           <div className="lg:col-span-8 flex flex-col gap-4">
             <span className="text-brand-gold text-xs sm:text-sm font-bold tracking-widest uppercase">Launch Your Career</span>
             <h2 className="font-display font-black text-3xl sm:text-5xl tracking-tight leading-tight">
-              AITS Tirupati Placements Hub
+              Annamacharya University Placements Hub
             </h2>
             <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed mt-2">
               Our graduates are employed at the world's most innovative institutions and tech giants. We offer extensive training modules starting in the first semester to ensure candidates acquire strong technical expertise and interview readiness.
@@ -358,7 +412,7 @@ export default function Home({ navigate }) {
             Your Future Starts Here
           </h2>
           <p className="text-slate-500 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-            Secure your admissions seats in premium technology divisions under the autonomous curriculum of AITS Tirupati today. Admissions for 2026-27 are filling fast.
+            Secure your admissions seats in premium technology divisions under the curriculum of Annamacharya University today. Admissions for 2026-27 are filling fast.
           </p>
           <div className="flex justify-center gap-4 mt-4">
             <button

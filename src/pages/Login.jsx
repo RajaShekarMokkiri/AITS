@@ -54,7 +54,7 @@ export default function Login({ navigate }) {
             <img src="/logo.png" className="w-12 h-12 object-contain bg-white rounded-full p-0.5 shrink-0" alt="AITS Logo" />
             <div className="flex flex-col">
               <span className="font-display text-lg font-black text-white tracking-tight leading-none">Annamacharya</span>
-              <span className="text-[8px] font-bold text-slate-300 tracking-wider mt-1 uppercase">Tech & Sciences · Tirupati</span>
+              <span className="text-[8px] font-bold text-slate-300 tracking-wider mt-1 uppercase">University · Rajampet</span>
             </div>
           </div>
 

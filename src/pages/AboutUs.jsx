@@ -4,7 +4,7 @@ import { Target, Compass, Eye, ShieldCheck, Award, HeartHandshake } from 'lucide
 export default function AboutUs({ navigate }) {
   const leadership = [
     { name: 'Sri C. Gangi Reddy', role: 'Hon\'ble Founder & Chairman', desc: 'A visionary educationalist whose lifelong commitment to academic access led to the foundation of the Annamacharya Educational Trust.' },
-    { name: 'Sri C. Yella Reddy', role: 'Vice Chairman', desc: 'Providing active organizational stewardship and strategic planning to raise AITS Tirupati to global standards of operational efficiency.' },
+    { name: 'Sri C. Yella Reddy', role: 'Vice Chairman', desc: 'Providing active organizational stewardship and strategic planning to raise Annamacharya University to global standards of operational efficiency.' },
     { name: 'Dr. C. Nadhamuni Reddy', role: 'Principal, Ph.D.', desc: 'An eminent researcher and academic administrator who has spearheaded the institution\'s autonomous breakthroughs and NAAC A accreditation.' }
   ];
 

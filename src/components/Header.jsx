@@ -59,10 +59,10 @@ export default function Header({ currentRoute, navigate }) {
           {/* Official Logo Crest for Annamacharya University */}
           <img src="/logo.png" className="w-12 h-12 sm:w-14 sm:h-14 object-contain shrink-0" alt="Annamacharya University Logo" />
           
-          <div className="flex flex-col gap-1">
-            <span className="font-display text-lg sm:text-2xl font-black text-brand-navy tracking-tight leading-none">Annamacharya University</span>
-            <span className="text-[9px] sm:text-[10.5px] font-sans font-bold text-brand-red tracking-widest leading-none uppercase">Empowering Minds, Shaping Futures</span>
-            <span className="text-[8px] sm:text-[9.5px] font-sans font-extrabold text-brand-gold tracking-widest leading-none uppercase">Vidwan Sarvatra Pujyathe</span>
+          <div className="flex flex-col gap-0.5 justify-center">
+            <span className="font-display text-base sm:text-xl font-black text-brand-navy tracking-tight leading-tight uppercase">Annamacharya University</span>
+            <span className="text-[7.5px] sm:text-[9px] font-sans font-semibold text-brand-red tracking-wide leading-tight">Estd. under Andhra Pradesh Private Universities (Establishment and Regulation) Act, 2016</span>
+            <span className="text-[7px] sm:text-[8px] font-sans font-bold text-brand-gold tracking-wider leading-none uppercase">(University listed in UGC as per section 2(f) of the UGC Act, 1956)</span>
           </div>
         </div>
 

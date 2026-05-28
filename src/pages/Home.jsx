@@ -3,7 +3,7 @@ import { Award, Users, Building, ShieldCheck, ArrowRight, CheckCircle2, ChevronR
 
 export default function Home({ navigate }) {
   // Typewriter effect state and logic
-  const words = ["Computer Science", "Electronics & Communication Engineering", "Electrical & Electronics Engineering", "Mechanical Engineering", "Civil Engineering"];
+  const words = ["Computer Science", "Electronics & Communication", "Electrical & Electronics", "Mechanical Engineering", "Civil Engineering"];
   const [currentWordIdx, setCurrentWordIdx] = React.useState(0);
   const [displayedText, setDisplayedText] = React.useState('');
   const [isDeleting, setIsDeleting] = React.useState(false);
@@ -89,14 +89,14 @@ export default function Home({ navigate }) {
 
           <h1 className="font-display font-black text-4xl sm:text-6xl lg:text-7xl tracking-tight leading-none mb-4 min-h-[2.2em] sm:min-h-[2em]">
             BTech in <br className="hidden sm:inline" />
-            <span className="text-brand-gold relative inline-block">
+            <span className="text-brand-gold relative inline-block whitespace-nowrap">
               {displayedText}
               <span className="inline-block w-1.5 h-[0.85em] bg-brand-gold ml-1.5 align-middle animate-pulse"></span>
             </span>
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mb-10">
-            Four-Year Multidisciplinary UG Course | 2 Years Institution + 2 Years Industry. Powered by TalentSprint (Part of Accenture). Gain practical skills on advanced frameworks while earning a degree.
+            A Multidisciplinary University Focused on Innovation, Research, and Global Opportunities and Building Future Leaders Through Quality Education and Advanced Learning
           </p>
 
           {/* Action Buttons */}

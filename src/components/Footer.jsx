@@ -81,9 +81,9 @@ export default function Footer({ navigate }) {
           <div>
             <h3 className="font-display font-bold text-lg text-white mb-6 border-l-3 border-brand-gold pl-3">Inquiries</h3>
             <div className="flex flex-col gap-3.5 text-sm text-slate-300">
-              <a href="mailto:info@annamacharyauniversity.edu.in" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
+              <a href="mailto:yasaswini@annamacharyauniversity.edu.in" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
                 <Mail size={16} className="text-brand-gold" />
-                <span>info@annamacharyauniversity.edu.in</span>
+                <span>yasaswini@annamacharyauniversity.edu.in</span>
               </a>
               <a href="tel:+919281416210" className="flex items-center gap-2.5 hover:text-brand-gold transition duration-200">
                 <Phone size={16} className="text-brand-gold" />

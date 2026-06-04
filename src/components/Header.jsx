@@ -22,9 +22,9 @@ export default function Header({ currentRoute, navigate }) {
       {/* Red Announcement / Top Bar */}
       <div className="w-full bg-brand-red text-white text-xs sm:text-sm py-2 px-4 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-2 border-b border-brand-red-dark">
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-          <a href="mailto:info@annamacharyauniversity.edu.in" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
+          <a href="mailto:yasaswini@annamacharyauniversity.edu.in" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
             <Mail size={14} className="text-white" />
-            <span>info@annamacharyauniversity.edu.in</span>
+            <span>yasaswini@annamacharyauniversity.edu.in</span>
           </a>
           <a href="tel:+919281416210" className="flex items-center gap-2 hover:text-brand-gold transition duration-200">
             <Phone size={14} className="text-white" />
